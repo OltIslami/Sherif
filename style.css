@@ -1,0 +1,170 @@
+/* General body styling */
+body {
+    background-color: white;
+    color: #333;
+}
+
+/* Header and footer background */
+.header,
+.footer {
+    background-color: #f8f9fa;
+}
+
+/* Blue accent styling */
+.blue-accent {
+    color: #007bff;
+}
+
+.blue-bg {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Section title styling */
+.section-title {
+    margin-top: 40px;
+    font-size: 2rem;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+}
+
+/* Icon styling */
+.icon {
+    margin-right: 10px;
+    color: #007bff;
+}
+
+/* Timeline styles */
+.timeline {
+    position: relative;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 30px;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.timeline-item:before {
+    content: '';
+    position: absolute;
+    left: 15px;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    background-color: #ddd;
+    z-index: 0;
+}
+
+.timeline-icon {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #3498db;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    z-index: 1;
+}
+
+.timeline-content {
+    margin-left: 60px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.timeline-item:nth-child(even) .timeline-content {
+    background-color: #f0f0f0;
+}
+
+.timeline-item:nth-child(odd) .timeline-content {
+    background-color: #e0e0e0;
+}
+
+/* Progress bars */
+.progress,
+.progress-bar {
+    border-radius: 10px;
+}
+
+/* Card styles */
+.card-header {
+    background-color: #f1f1f1;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.card-body {
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+
+.card-body ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.card-body ul li {
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+.card-body i {
+    margin-right: 10px;
+    color: #3498db;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Back to top button */
+#backToTop {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #3498db;
+    border: none;
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+    z-index: 9999;
+    display: none;
+}
+
+/* Button hover effect */
+#backToTop:hover {
+    background-color: #2980b9;
+}
+
+/* Display button on scroll down */
+#backToTop:focus {
+    outline: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    #backToTop {
+        bottom: 20px;
+        right: 20px;
+    }
+}
